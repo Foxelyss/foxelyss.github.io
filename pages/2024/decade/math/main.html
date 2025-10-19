@@ -1,0 +1,78 @@
+---
+exclusive_lang: ru
+---
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="/assets/css/2024/decade/jeopardy.css" rel="stylesheet" />
+  <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+  <ul id="splash" class="results" style="gap: 1rem">
+    <li style="text-align: center">
+      Областное государственное бюджетное профессиональное образовательное
+      учреждение «Томский техникум информационных технологий»
+    </li>
+    <li>Викторина по математике</li>
+    <li>
+      <button onclick="document.getElementById('splash').style = 'display: none';
+          document.getElementById('game').style = '';">
+        Начать
+      </button>
+    </li>
+    <li>Выполнил Смирнов Степан гр. 632</li>
+    <li>г. Томск</li>
+  </ul>
+  <div id="game" class="game" style="display: none">
+    <div id="info" class="info"></div>
+
+    <div id="teams" class="status">
+      <ul>
+        <li>Правильно ответили команды:</li>
+        <li>
+          <div>
+            <label for="first">Команда № 1</label>
+            <input type="checkbox" id="first" />
+          </div>
+        </li>
+        <li>
+          <div>
+            <label for="second">Команда № 2</label>
+            <input type="checkbox" id="second" />
+          </div>
+        </li>
+        <li>
+          <div>
+            <label for="third">Команда № 3</label>
+            <input type="checkbox" id="third" />
+          </div>
+        </li>
+      </ul>
+      <div>
+        <button onClick="Win()">Далее</button>
+      </div>
+    </div>
+  </div>
+  <ul class="results" id="results" style="display: none">
+    <li>Результаты:</li>
+    <li>
+      <div id="team1"></div>
+    </li>
+    <li>
+      <div id="team2"></div>
+    </li>
+    <li>
+      <div id="team3"></div>
+    </li>
+  </ul>
+</body>
+
+<script src="/assets/js/decade/Math.js"></script>
+
+</html>

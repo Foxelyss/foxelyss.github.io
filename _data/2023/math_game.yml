@@ -1,0 +1,14 @@
+en:
+  name: Math game
+  start_game: Start game
+  correct_answers: Correct answers
+  errors: Errors
+  correct_answers_count: Correct answers count is
+  errors_count: Errors count is
+ru:
+  name: Математическая игра
+  start_game: Начать игру
+  correct_answers: Правильные ответы
+  errors: Ошибки
+  correct_answers_count: Количество правильных ответов
+  errors_count: Количество ошибок

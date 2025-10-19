@@ -25,12 +25,25 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "foxelyss.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
-github_username:  foxelyss
+github_username: foxelyss
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-polyglot
+  - jekyll-gfm-admonitions
+
+
+paginate: 5
+paginate_path: "/page:num"
+languages: ["en", "ru"]
+default_lang: "en"
+exclude_from_localization:
+  ["javascript", "images", "css", "public", "sitemap", "robots", "assets"]
+parallel_localization: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

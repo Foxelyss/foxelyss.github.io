@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  display: grid;
+
+  font-size: xx-large;
+
+  color: #fff;
+  font-family: system-ui;
+  grid-template-rows: 1fr;
+  background-color: royalblue;
+}
+button,
+input[type="checkbox"] {
+  font-size: large;
+  transform: scale(1.5);
+  transition: all 0.1s ease-in-out;
+}
+
+input[type="checkbox"]:hover,
+button:hover {
+  transform: scale(180%);
+}
+button:disabled{
+  background-image: url("/assets/img/decade/cross.svg");
+  background-size: cover;
+  border-image: url("/assets/img/decade/cross.svg");
+}
+
+.status {
+  display: flex;
+  border-style: solid;
+  border-radius: 0.5rem;
+  background-color: rgb(31, 31, 31);
+  background-image: url("/assets/img/decade/track.svg");
+  justify-content: space-around;
+  align-items: center;
+}
+button {
+  border-radius: 0.5rem;
+  background-color: rgba(94, 94, 94, 0.568);
+  border-style: solid;
+  border-color: white;
+  font-size: large;
+  color: #fff;
+}
+.game {
+  display: grid;
+  background: linear-gradient(#59b1cc, #8f20bb);
+  background-image: url("/assets/img/decade/pattern.svg");
+  background-size: 5rem;
+  grid-template-rows: 1fr min(25%,6rem);
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+.info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  max-height: 50%;
+  height: min-content;
+  max-width: 80%;
+  min-height: 4rem;
+  margin: 0;
+  padding: 0;
+}
+.controls {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: dodgerblue;
+}
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  flex-direction: column;
+}
+.results {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-image: url("/assets/img/decade/home.svg");
+  box-sizing: content-box;
+  border-top-style: dashed;
+}
+li > div {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+}
+h3 {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+#team_selector{
+  aspect-ratio: 1/1;
+  height: min(35%,7rem);
+}
+#results_list{
+  display: grid;
+  grid-template-columns: 9rem 1fr 9rem;
+  text-align: center;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: xx-large;
+}
