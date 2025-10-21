@@ -21,9 +21,9 @@
 title: Foxelyss!
 email: foxelyss@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A personal blog about programming!
+  A personal blog about programming, and DIY projects!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "foxelyss.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.foxelyss.ru" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username: foxelyss
 
