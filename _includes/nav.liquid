@@ -8,7 +8,7 @@
     <li>  
       <!-- jekyll-polyglot will process ferh= into href= through the static_href liquid block tag without relativizing the url; useful for making language navigation switchers  -->
       {% for tongue in site.languages %}
-    <a {% if tongue == site.active_lang or page.lang_exclusive == null %}style="font-weight: bold; pointer-events: none; cursor: default;"{% endif %} {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue }}</a>{%- if forloop.last == false -%}{{" "}}{{ site.langsep }}{%- endif -%}
+    <a {% if tongue == site.active_lang or page.lang-exclusive != null %}style="font-weight: bold; pointer-events: none; cursor: default;"{% endif %} {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue }}</a>{%- if forloop.last == false -%}{{" "}}{{ site.langsep }}{%- endif -%}
       {% endfor %}
     </li>
   </ul>
