@@ -28,7 +28,7 @@ url: "foxelyss.github.io" # the base hostname & protocol for your site, e.g. htt
 github_username: foxelyss
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
@@ -36,7 +36,7 @@ plugins:
   - jekyll-polyglot
   - jekyll-gfm-admonitions
 
-
+permalink: /:year/:month/:title
 paginate: 5
 paginate_path: "/page:num"
 languages: ["en", "ru"]

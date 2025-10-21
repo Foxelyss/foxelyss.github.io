@@ -1,4 +1,4 @@
-- name: Main page
+- name: Foxelyss
   url: /
-- name: Main asd
-  url: /
+- name: About me
+  url: /pages/about
